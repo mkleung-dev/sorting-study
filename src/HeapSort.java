@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class HeapSort extends Sort {
 
     private void heapify(int[] input, int end, int index) {

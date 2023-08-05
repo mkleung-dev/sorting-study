@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class InsertionSort extends Sort {
 
     @Override
@@ -9,7 +7,7 @@ public class InsertionSort extends Sort {
         for (int currIndex = 1; currIndex < length; currIndex++) {
             int j = 0;
             int currValue = output[currIndex];
-            for (; j < currIndex && this.compare.compare(output[j], currValue) < 0; j++);
+            for (; j < currIndex && this.compare.compare(output[j], currValue) < 0; j++) {}
             int insertIndex = j;
             for (int k = currIndex; k > insertIndex; k--) {
                 output[k] = output[k-1];
